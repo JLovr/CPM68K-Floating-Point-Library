@@ -54,7 +54,7 @@ Scripts:
 11. spfefs.c - contains support routines for elementary functions.
 12. spfefn.c - contains routines for base euler functions.
 13. spft1 - basic trig functions.
-14. spft2 - additional tring functions and some additional functions.
+14. spft2 - additional trig functions and some additional functions.
 15. spfioi - ascii to aspf function.
 16. spfioo - spf to ascii function.
 17. stdio.h - updated stdio.h file
