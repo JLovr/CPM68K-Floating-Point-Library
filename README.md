@@ -34,9 +34,13 @@ Instructions:  BY default we employ the M drive (for math) as our spflib reposit
    i. cspf (builds the spflib library)
    j. save everything.
 7. Add include of spflib into program (  #include "spflib.h"  )
-8. compile program:  c <program name>
-9. link program: spfl <program name>
-10. Execute program.
+   Minimum Includes are, in this order:
+   a. ctype.h
+   b. stdio.h
+   c. spflib.h
+9. compile program:  c <program name>
+10. link program: spfl <program name>
+11. Execute program.
 
 
 Scripts:
