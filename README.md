@@ -9,7 +9,7 @@ Because we are not employing the float type, function overloading and type conve
 
 spf is definded as long.  That simplifies many of the type transition issues.  Other types employed internally to the package are q2.30, q4.28 and q2.62.  Those are employed for CORDIC algorithms (euler and trig).  We also employ angle folding to minimize CORDIC error issues.  For those looking to try contructing these yourself, keep in mind that you need to employ accumulators that contain twice as many bits as your desired result.  Took me a long time to figure that out.
 
-The code in the initial release is messy, intentionally as it is a work in progress.  I will address that eventually releasing a neatened up release, but I wanted to get this out so others could poke holes in it with a minimum effort. You will have to build the library from source.  My version of CP/M68K won't allow me to use cpmtools to copy files back to my linux workstation.
+The code in the initial release is messy, intentionally as it is a work in progress.  I will address that, eventually releasing a neatened up release, but I wanted to get this out so others could poke holes in it with a minimum effort. You will have to build the library from source.  My version of CP/M68K won't allow me to use cpmtools to copy files back to my linux workstation.
 
 Instructions:  BY default we employ the M drive (for math) as our spflib repository.
 1. Build memory Drive:
@@ -38,29 +38,29 @@ Instructions:  BY default we employ the M drive (for math) as our spflib reposit
 
 
 Scripts:
-c.sub - (modified) compile a c program - will often crash the system when an error is found.
-ch.sub - (new) test compile a program - will generally not crash the system when finding an error.
-cspf.sub - (new) builds the floating point library from scratch - spflib
-save.sub - (new) saves the B memory drive files to the permanent storage drive
-spfasm.sub - (new) compiles an assembler file for the floating point library
-spfl.sub - (new) builds executable code (relocatable by default) that employs
+1. c.sub - (modified) compile a c program - will often crash the system when an error is found.
+2. ch.sub - (new) test compile a program - will generally not crash the system when finding an error.
+3. cspf.sub - (new) builds the floating point library from scratch - spflib
+4. save.sub - (new) saves the B memory drive files to the permanent storage drive
+5. spfasm.sub - (new) compiles an assembler file for the floating point library
+6. spfl.sub - (new) builds executable code (relocatable by default) that employs
            the spflib for a program.
-spflib source files:
-spflib.h - header file for use in programs.
-spfmul.s - assembler routine for a single precision multiply.
-spfcore.c - contains core functions.
-spfefs.c - contains support routines for elementary functions.
-spfefn.c - contains routines for base euler functions.
-spft1 - basic trig functions.
-spft2 - additional tring functions and some additional functions.
-spfioi - ascii to aspf function.
-spfioo - spf to ascii function.
-stdio.h - updated stdio.h file
-stdlib.h - updated stdlib.h file
-string.h - updated string.h file
+7.  spflib source files:
+8.  spflib.h - header file for use in programs.
+9.  spfmul.s - assembler routine for a single precision multiply.
+10. spfcore.c - contains core functions.
+11. spfefs.c - contains support routines for elementary functions.
+12. spfefn.c - contains routines for base euler functions.
+13. spft1 - basic trig functions.
+14. spft2 - additional tring functions and some additional functions.
+15. spfioi - ascii to aspf function.
+16. spfioo - spf to ascii function.
+17. stdio.h - updated stdio.h file
+18. stdlib.h - updated stdlib.h file.
+19. string.h - updated string.h file
 
 
 
 Code for support functions to be added to clib
-bdos.s - calls bdos functions from C code.
-clibadds.c - adds the strchr adn strrchr functions
+   bdos.s - calls bdos functions from C code.
+   clibadds.c - adds the strchr adn strrchr functions
