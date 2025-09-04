@@ -52,19 +52,22 @@ Scripts:
 5. spfasm.sub - (new) compiles an assembler file for the floating point library
 6. spfl.sub - (new) builds executable code (relocatable by default) that employs
            the spflib for a program.
-7.  spflib source files:
-8.  spflib.h - header file for use in programs.
-9.  spfmul.s - assembler routine for a single precision multiply.
-10. spfcore.c - contains core functions.
-11. spfefs.c - contains support routines for elementary functions.
-12. spfefn.c - contains routines for base euler functions.
-13. spft1 - basic trig functions.
-14. spft2 - additional trig functions and some additional functions.
-15. spfioi - ascii to aspf function.
-16. spfioo - spf to ascii function.
-17. stdio.h - updated stdio.h file
-18. stdlib.h - updated stdlib.h file.
-19. string.h - updated string.h file
+spflib source files:
+1.  spflib.h - header file for use in programs.
+2.  spfmul.s - assembler routine for a single precision multiply.
+3. spfcore.c - contains core functions.
+4. spfefs.c - contains support routines for elementary functions.
+5. spfefn.c - contains routines for base euler functions.
+6. spft1.c - basic trig functions.
+7. spft2.c - additional trig functions and some additional functions.
+8. spfioi.c - ascii to aspf function.
+9. spfioo.c - spf to ascii function.
+
+Includes:
+1. stdio.h - updated stdio.h file
+2. stdlib.h - updated stdlib.h file.
+3. string.h - updated string.h file
+4. spflib.h - new spflib header file.
 
 
 
