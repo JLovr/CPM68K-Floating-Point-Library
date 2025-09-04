@@ -13,9 +13,10 @@ The code in the initial release is messy, intentionally as it is a work in progr
 
 Instructions:  BY default we employ the M drive (for math) as our spflib repository.  I recommend you do all your work on the memory drive - for the rosco, this is typically B:  You need a minimum of 1Meg for it to be useful, but I recommend you size it at 1.5 Meg.
 
-1. Build memory Drive:
+1. Save the original versions of stdio.h, stdlib.h adn string.h to another location.  Copy stdio.h, stdlib.h, and string.h from the M: drive to your a drive.
+2. Build memory Drive:
    a. FLOAT M:  (if you put the files on another drive use that - this copys all the requisite files to the B:         drive which by default is the memory drive.
-2. Add functions to clib:
+3. Add functions to clib:
    a. archive clib for safety!  pip clib.bak=clib[o]
    a. spfasm bdos.s
    b. c clibadds
@@ -33,14 +34,14 @@ Instructions:  BY default we employ the M drive (for math) as our spflib reposit
    h. c spfioo
    i. cspf (builds the spflib library)
    j. save everything.
-7. Add include of spflib into program (  #include "spflib.h"  )
+6. Add include of spflib into program (  #include "spflib.h"  )
    Minimum Includes are, in this order:
    a. ctype.h
    b. stdio.h
    c. spflib.h
-9. compile program:  c <program name>
-10. link program: spfl <program name>
-11. Execute program.
+7. compile program:  c <program name>
+8. link program: spfl <program name>
+9. Execute program.
 
 
 Scripts:
