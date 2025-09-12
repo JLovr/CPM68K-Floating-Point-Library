@@ -88,3 +88,6 @@ Includes:
 Code for support functions to be added to clib:
 1. bdos.s - calls bdos functions from C code.
 2. clibadds.c - adds the strchr and strrchr functions
+
+
+Comments welcome.
