@@ -13,7 +13,7 @@ The code in the initial release is messy, intentionally as it is a work in progr
 
 Instructions:  BY default we employ the M drive (for math) as our spflib repository.  I recommend you do all your work on the memory drive - for the rosco, this is typically B:  You need a minimum of 1Meg for it to be useful, but I recommend you size it at 1.5 Meg.
 
-1. Save the original versions of stdio.h, stdlib.h adn string.h to another location.  Copy stdio.h, stdlib.h, and string.h from the M: drive to your a drive.
+1. Save the original versions of stdio.h, stdlib.h adn string.h to another location.  Copy stdio.h, stdlib.h, and string.h from the M: drive to your A drive.
 2. Build memory Drive:
    a. FLOAT M:  (if you put the files on another drive use that - this copys all the requisite files to the B:         drive which by default is the memory drive.
 3. Add functions to clib:
@@ -42,6 +42,19 @@ Instructions:  BY default we employ the M drive (for math) as our spflib reposit
 7. compile program:  c <program name>
 8. link program: spfl <program name>
 9. Execute program.
+10. Test programs are included These are:
+   a. mtest.c - general test program, feed it values (spf/floating point format) check results.
+   b. iotest.c - test spf to string and string to spf format values.
+   c. btrigt.c - test basic trig functions.
+   d. eulert.c - test euler functions (e^x, ln, log (base 10), log2)
+   d. atant.c - test for arctan
+   e. atan2t.c - additional tests for arctan.
+   f. htrigt.c - hyperbolic function tests
+   g. hypertt.c - additional hyperbolic function tests (fit)
+   h. ihypert.c - inverse hyperbolic function tests
+   i. mixtt.c - additional useful functions tests
+
+
 
 
 Scripts:
