@@ -1,0 +1,2 @@
+lo68 -r -u_nofloat -o $1.68k s.o $1.o spflib clib
+

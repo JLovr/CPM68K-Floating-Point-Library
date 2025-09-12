@@ -1,0 +1,2 @@
+as68 -f B: -p -s b: -l -u -n $1.s >b:$1.prn
+

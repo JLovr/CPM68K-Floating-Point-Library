@@ -1,0 +1,3 @@
+era spflib
+ar68 rv spflib spfioo.o spfioi.o spft2.o spft1.o spfefn.o spfefs.o spfcore.o spfmul.o
+

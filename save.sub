@@ -1,0 +1,7 @@
+pip $1=*.c
+pip $1=*.o[o]
+pip $1=*.68k[o]
+pip $1=*.[o]
+pip $1=*.sub
+pip $1=*.h
+
