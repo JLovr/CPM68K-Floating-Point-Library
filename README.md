@@ -11,7 +11,7 @@ spf is definded as long.  That simplifies many of the type transition issues.  O
 
 The code in the initial release is messy, intentionally as it is a work in progress.  I will address that, eventually releasing a neatened up release, but I wanted to get this out so others could poke holes in it with a minimum effort. You will have to build the library from source.  My version of CP/M68K won't allow me to use cpmtools to copy files back to my linux workstation.
 
-Instructions:  BY default we employ the M drive (for math) as our spflib repository.  I recommend you do all your work on the memory drive - for the rosco, this is typically B:  You need a minimum of 1Meg for it to be useful, but I recommend you size it at 1.5 Meg.
+Instructions:  By default we employ the M drive (for math) as our spflib repository.  I recommend you do all your work on the memory drive - for the rosco, this is typically B:  You need a minimum of 1Meg for it to be useful, but I recommend you size it at 1.5 Meg.
 
 1. Save the original versions of stdio.h, stdlib.h adn string.h to another location.  Copy stdio.h, stdlib.h, and string.h from the M: drive to your A drive.
 2. Build memory Drive:
